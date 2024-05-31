@@ -2,9 +2,9 @@ import React from "react";
 
 export default function About() {
   return (
-    <div>
+    <div className="scroll-hider">
       <label className="block mb-2 text-lg  font-bold text-gray-900 dark:text-white">
-        Your Text
+        
       </label>
       <p className="dark:text-gray-300">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis

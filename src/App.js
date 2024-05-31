@@ -45,7 +45,7 @@ function App() {
 
   return (
     <Router>
-      <div>
+      <div className="scroll-hider">
         {/* ############################################################### */}
         <div className="flex flex-col fixed z-10 w-full top-0">
           <Navbar title="Text Converter" mode={mode} handleMode={handleMode} />
@@ -55,7 +55,7 @@ function App() {
         </div>
 
         {/* ############################################################### */}
-        <div className="mx-auto w-11/12 lg:w-3/5 mt-24">
+        <div className="mx-auto w-11/12 lg:w-3/5 mt-24 scroll-hider">
           <Routes>
             <Route exact path="/" element={<TextForm handleAlert={handleAlert} />} />
             <Route exact path="/about" element={<About />} />
